@@ -1,4 +1,4 @@
-from context import solver
+from context import rubik_solver
 
 import unittest
 
