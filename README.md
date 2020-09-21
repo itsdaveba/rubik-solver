@@ -1,1 +1,1 @@
-# RubikSolver
+# Rubik Solver
