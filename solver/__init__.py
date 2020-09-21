@@ -1,0 +1,1 @@
+from .solver import generate_random_scramble
