@@ -9,7 +9,7 @@ class TestScrambler(unittest.TestCase):
 	def test_scrambler(self):
 		good_scramble = True
 		for _ in range(N_SCRAMBLES):
-			scramble_list = solver.generate_random_scramble(N_SCRAMBLE_LENGTH).split()
+			scramble_list = rubik_solver.generate_random_scramble(N_SCRAMBLE_LENGTH).split()
 			for i in range(len(scramble_list)-1):
 				if scramble_list[i][0] == scramble_list[i+1][0]:
 					good_scramble = False
