@@ -6,12 +6,13 @@ import numpy as np
 class Cube:
 	def __init__(self, scramble=None):
 		self.reset()
-		self.apply_scramble(scramble)
+		self.position = self.apply_scramble(scramble)
 
 	def reset(self):
 		self.position = dict(
 			orientation = np.zeros(20, dtype=np.int),
 			permutation = np.arange(20))
+		self.coordinates = (0,0,0,0)
 
 	def is_solved(self, position=None):
 		if position is None:
@@ -20,13 +21,16 @@ class Cube:
 		is_permutation = np.array_equal(position['permutation'], np.arange(20))
 		return is_orientation and is_permutation
 
-	def apply_scramble(self, scramble):
+	def apply_scramble(self, scramble, position=None):
 		self.scramble = scramble
+		if position is None:
+			position = self.position
 		if self.scramble is not None:
 			if type(self.scramble) == int:
 				self.scramble = generate_random_scramble(scramble)
 			for move in self.scramble.split():
-				self.position = self.make_move(move)
+				position = self.make_move(move, position)
+		return position
 
 	def make_move(self, move, position=None):
 		if position is None:
@@ -86,3 +90,33 @@ class Cube:
 			new_position['permutation'][i] = tmp2[j]
 			j += 1
 		return new_position
+
+	def get_coordinates(self, position=None):
+		if position is None:
+			position = self.position
+			
+		corner_orientation_index = 0
+		corner_permutation_index = 0
+		edge_orientation_index = 0
+		edge_permutation_index = 0
+		
+		for i in range(7):
+			corner_orientation_index *= 3
+			corner_orientation_index += position["orientation"][i]
+			
+			corner_permutation_index *= 8-i
+			for j in range(i+1, 8):
+				if position["permutation"][i] > position["permutation"][j]:
+					corner_permutation_index += 1
+					
+		for i in range(8, 19):
+			edge_orientation_index *= 2
+			edge_orientation_index += position["orientation"][i]
+			
+			if i != 18:
+				edge_permutation_index *= 20-i
+				for j in range(i+1, 20):
+					if position["permutation"][i] > position["permutation"][j]:
+						edge_permutation_index += 1
+	
+		return corner_orientation_index, corner_permutation_index, edge_orientation_index, edge_permutation_index

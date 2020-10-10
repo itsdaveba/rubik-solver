@@ -21,8 +21,10 @@ class TestCube(unittest.TestCase):
 		self.assertTrue(np.array_equal(cube.position['permutation'], permutation))
 		for depth in range(MAX_DEPTH+1):
 			cube.reset()
-			cube.apply_scramble(depth)
+			cube.position = cube.apply_scramble(depth)
 			solution = solver.solve(depth)
+			if depth != 0:
+				self.assertNotEqual(solution, '')
 			for move in solution.split():
 				cube.position = cube.make_move(move)
 			self.assertTrue(cube.is_solved())

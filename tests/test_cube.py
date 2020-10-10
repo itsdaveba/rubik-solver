@@ -33,7 +33,7 @@ class TestCube(unittest.TestCase):
 			self.assertTrue(np.array_equal(cube.position['orientation'], orientation))
 			self.assertTrue(np.array_equal(cube.position['permutation'], permutation))
 			cube.reset()
-			cube.apply_scramble(scramble)
+			cube.position = cube.apply_scramble(scramble)
 			self.assertFalse(cube.is_solved())
 			self.assertTrue(np.array_equal(cube.position['orientation'], orientation))
 			self.assertTrue(np.array_equal(cube.position['permutation'], permutation))
