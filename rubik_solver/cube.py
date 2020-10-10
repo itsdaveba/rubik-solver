@@ -10,8 +10,8 @@ class Cube:
 
 	def reset(self):
 		self.position = dict(
-		orientation = np.zeros(20, dtype=np.int),
-		permutation = np.arange(20))
+			orientation = np.zeros(20, dtype=np.int),
+			permutation = np.arange(20))
 
 	def is_solved(self, position=None):
 		if position is None:

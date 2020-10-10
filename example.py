@@ -1,5 +1,4 @@
 import rubik_solver as rs
-import numpy as np
 import time
 
 

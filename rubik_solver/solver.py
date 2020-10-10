@@ -15,8 +15,7 @@ class Solver:
 
 	def search(self, position, depth, last_move=None):
 		if depth == 0:
-			if np.array_equal(position['orientation'], np.zeros(20, dtype=int)) and \
-			np.array_equal(position['permutation'], np.arange(20)):
+			if self.cube.is_solved(position):
 				return True
 		else:
 			for move in available_moves[last_move]:
