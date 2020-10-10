@@ -1,6 +1,5 @@
 from .defs import available_moves
 
-import copy
 import numpy as np
 
 

@@ -3,8 +3,6 @@ from .context import available_moves
 
 import numpy as np
 import unittest
-import random
-import copy
 
 
 benchmark_scrambles = [
