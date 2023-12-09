@@ -10,6 +10,7 @@ Welcome to Rubik Solver's documentation!
    usage
    modules
    contributing
+   authors
    history
 
 Indices and tables
