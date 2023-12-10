@@ -7,3 +7,4 @@ Sphinx==7.2.6
 twine==4.0.2
 click==8.1.7
 pytest==7.4.3
+black==23.11.0
