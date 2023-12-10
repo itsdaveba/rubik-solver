@@ -12,7 +12,7 @@ To install Rubik Solver, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install -i https://test.pypi.org/simple/ cube-solver
+    $ pip install cube-solver
 
 This is the preferred method to install Rubik Solver, as it will always install the most recent stable release.
 
