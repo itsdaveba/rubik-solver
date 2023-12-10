@@ -6,7 +6,7 @@ import pytest
 
 from click.testing import CliRunner
 
-from rubik import rubik
+# from rubik import rubik
 from rubik import cli
 
 
