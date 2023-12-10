@@ -20,7 +20,7 @@ Rubik's Cube Solver
 
 
 * Free software: MIT license
-* Documentation: https://rubik.readthedocs.io.
+* Documentation: https://cube-solver.readthedocs.io.
 
 
 Features
