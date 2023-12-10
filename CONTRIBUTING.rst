@@ -62,7 +62,7 @@ Ready to contribute? Here's how to set up `rubik-solver` for local development.
 1. Fork the `rubik-solver` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:itsdaveba/rubik-solver.git
+    $ git clone git@github.com:<your_username>/rubik-solver.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 

@@ -1,6 +1,6 @@
-* Rubik Solver version:
-* Python version:
-* Operating System:
+* Rubik Solver version: 
+* Python version: 
+* Operating System: 
 
 ### Description
 
