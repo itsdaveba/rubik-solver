@@ -3,14 +3,14 @@ Rubik Solver
 ============
 
 
-.. image:: https://img.shields.io/pypi/v/rubik.svg
-        :target: https://pypi.python.org/pypi/rubik
+.. image:: https://img.shields.io/pypi/v/cube-solver.svg
+        :target: https://pypi.python.org/pypi/cube-solver
 
-.. image:: https://img.shields.io/travis/itsdaveba/rubik.svg
-        :target: https://travis-ci.com/itsdaveba/rubik
+.. image:: https://img.shields.io/travis/itsdaveba/cube-solver.svg
+        :target: https://travis-ci.com/itsdaveba/cube-solver
 
-.. image:: https://readthedocs.org/projects/rubik/badge/?version=latest
-        :target: https://rubik.readthedocs.io/en/latest/?version=latest
+.. image:: https://readthedocs.org/projects/cube-solver/badge/?version=latest
+        :target: https://cube-solver.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 
 
