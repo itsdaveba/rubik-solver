@@ -6,3 +6,4 @@ coverage==7.3.2
 Sphinx==7.2.6
 twine==4.0.2
 click==8.1.7
+pytest==7.4.3

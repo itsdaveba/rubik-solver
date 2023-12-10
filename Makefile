@@ -53,13 +53,13 @@ lint/flake8: ## check style with flake8
 lint: lint/flake8 ## check style
 
 test: ## run tests quickly with the default Python
-	python setup.py test
+	pytest
 
 test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source rubik setup.py test
+	coverage run --source rubik -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html

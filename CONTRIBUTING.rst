@@ -62,7 +62,7 @@ Ready to contribute? Here's how to set up `rubik-solver` for local development.
 1. Fork the `rubik-solver` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:<your_username>/rubik-solver.git
+    $ git clone git@github.com:your_name_here/rubik-solver.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
@@ -103,7 +103,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
 3. The pull request should work for Python 3.5, 3.6, 3.7 and 3.8, and for PyPy. Check
-   https://travis-ci.com/itsdaveba/cube-solver/pull_requests
+   https://travis-ci.com/itsdaveba/rubik-solver/pull_requests
    and make sure that the tests pass for all supported Python versions.
 
 Tips
@@ -111,8 +111,8 @@ Tips
 
 To run a subset of tests::
 
+$ pytest tests.test_rubik
 
-    $ python -m unittest tests.test_rubik
 
 Deploying
 ---------
