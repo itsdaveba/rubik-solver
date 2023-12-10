@@ -39,11 +39,11 @@ setup(
     long_description=readme + '\n\n' + history,
     include_package_data=True,
     keywords='rubik',
-    name='rubik',
+    name='cube-solver',
     packages=find_packages(include=['rubik', 'rubik.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/itsdaveba/rubik',
+    url='https://github.com/itsdaveba/rubik-solver',
     version='0.1.0',
     zip_safe=False,
 )
