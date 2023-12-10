@@ -1,5 +1,5 @@
 Welcome to Rubik Solver's documentation!
-======================================
+========================================
 
 .. toctree::
    :maxdepth: 2
